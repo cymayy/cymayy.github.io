@@ -45,18 +45,18 @@
 <body>
 
 <h1>Jigsaw Odyssey Privacy Policy</h1>
-<p class="meta">Effective date: September 27, 2026</p>
+<p class="meta">Effective date: September 28, 2026</p>
 
 <h2>1. Who we are</h2>
 <p>This Privacy Policy describes how the Android app <strong>Jigsaw Odyssey</strong> (package name <code>com.jigsawodyssey.app</code>) handles information. The app is published by <strong>Editing Tools Lab</strong> (“we”, “us”).</p>
-<p>This policy applies to the version of Jigsaw Odyssey distributed on Google Play that contains no advertising. If a future version adds advertising or any other service that processes personal data, we will update this policy before that version is released.</p>
+<p>This policy applies to the no-advertising version of Jigsaw Odyssey for Google Play. This version uses Google Analytics for Firebase and Firebase Crashlytics, as described below. If a future version adds advertising or changes how we process data, we will update this policy before that version is released.</p>
 
 <h2>2. Summary</h2>
 <ul>
-  <li>Jigsaw Odyssey does not require an account and does not ask for your name, email address, phone number, location, contacts, photos or files.</li>
-  <li>The app does not request the Android permission needed to access the internet. It cannot send your game data to us or to anyone else.</li>
-  <li>Your game progress and settings are stored only on your device.</li>
-  <li>The app contains no advertising, analytics or crash-reporting software development kits (SDKs), and no in-app purchases.</li>
+  <li>Jigsaw Odyssey does not require an account or ask for your name, email address or phone number to play. It does not request access to your contacts or photos, or permission to obtain your precise location.</li>
+  <li>Your game progress and settings are saved locally. Android may back them up or transfer them according to your system settings.</li>
+  <li>Google Analytics for Firebase and Firebase Crashlytics automatically process usage and diagnostic data and send it to Google to help us understand app use and improve stability.</li>
+  <li>This version has no advertising or in-app purchases. Analytics advertising ID collection is disabled, but app-instance and installation identifiers are still used.</li>
 </ul>
 
 <h2>3. Information stored on your device</h2>
@@ -69,41 +69,67 @@
   <tr><td>Sound effects setting (on/off)</td><td>Remember your preference</td></tr>
   <tr><td>A small internal app-state record</td><td>Internal app configuration; it contains no personal information</td></tr>
 </table>
-<p>This data is created by your gameplay. It is not linked to your identity, and it is not transmitted to us. We do not have access to it.</p>
+<p>These game saves are stored locally and are separate from the Firebase usage and diagnostic data described below. We do not use Firebase Analytics or Crashlytics to upload your local game save files, puzzle image content or user photos. Android system backups and device transfers are described in section 7.</p>
 
 <h2>4. Information we collect, use and share</h2>
-<p>We do not collect personal information through the app, and we do not sell, rent or share personal information with third parties.</p>
-<p>The app does not request the internet permission or any permission that gives access to personal data on your device. It does not read device identifiers such as the Android advertising ID, and it does not access your photos, media, files, camera, microphone, location, contacts or accounts.</p>
+<p>We use Firebase analysis and diagnostic reports to understand how Jigsaw Odyssey is used and to improve it. The SDKs automatically process the information described below and send it to Google Firebase services. We do not sell or rent personal information.</p>
+<p><strong>Google Analytics for Firebase</strong></p>
+<p>Analytics helps us understand overall app use, such as app opens, first launches, sessions and similar interactions. It may automatically process:</p>
+<ul>
+  <li>an app-instance identifier that distinguishes an installation of the app;</li>
+  <li>usage information, including automatic events, session counts and duration, app opens, first launches and app updates;</li>
+  <li>app and device metadata, such as app version, operating system and device model; and</li>
+  <li>approximate geographic information derived from IP addresses, rather than GPS location.</li>
+</ul>
+<p>Jigsaw Odyssey does not request precise location permission or actively read GPS location for Analytics. In this no-advertising version, Analytics advertising ID collection is disabled, and the Android Advertising ID permission and related AdServices advertising ID and attribution permissions have been removed. This does not disable app-instance or Firebase installation identifiers.</p>
+<p><strong>Firebase Crashlytics</strong></p>
+<p>Crashlytics helps us detect crashes, investigate stability problems and locate and fix errors. It may automatically process crash stack traces, relevant application state at the time of a crash, and device metadata. It also uses a Crashlytics installation UUID and Firebase Installations identifiers, together with app, device and session metadata from Firebase Sessions.</p>
+<p>Because Analytics is also enabled, Crashlytics may use Analytics breadcrumb information: a record of app activity leading up to a crash that helps explain what happened.</p>
+<p>We do not set custom user IDs or deliberately attach names, email addresses, phone numbers, user-entered text, file paths or other sensitive custom information to Analytics events or Crashlytics reports. Support emails are handled separately, as described in section 5.</p>
+<p>The app does not request access to your photos, shared media or files, camera, microphone, contacts or accounts.</p>
 
 <h2>5. Contacting support</h2>
-<p>The app’s Settings screen can open your own email app so that you can write to us. If you choose to email us, we will receive your email address and whatever you include in your message. We use this information only to reply to you and to handle your request, and we do not share it with anyone else.</p>
+<p>The app’s Settings screen can open your own email app so that you can write to us. If you choose to email us, we will receive your email address and whatever you include in your message. We use this information to respond to and handle your request. We do not sell support communications or use them for advertising.</p>
 <p>We keep support emails only for as long as we need them to respond to you and handle your request. You can ask us at any time to delete your emails, and we will do so.</p>
 <p>The Settings screen can also open this Privacy Policy in your web browser. Your browser, not Jigsaw Odyssey, handles that connection.</p>
 
 <h2>6. Third-party services</h2>
-<p>Jigsaw Odyssey does not include third-party advertising, analytics, crash-reporting or social SDKs.</p>
-<p>The app is distributed through Google Play. Google may process information about your device and your use of Google Play under Google’s own privacy policy. If you have chosen to share usage and diagnostics information with app developers on your device, Google may provide us with aggregated statistics and crash reports that do not identify you.</p>
+<p>Jigsaw Odyssey uses <strong>Google Firebase</strong>, provided by <strong>Google LLC</strong>. The products used are <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong>. Google processes the related analysis and diagnostic data under the applicable Firebase and Google service terms and privacy policies.</p>
+<p>For details about these services and their data practices, see:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a></li>
+  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li><a href="https://firebase.google.com/docs/android/play-data-disclosure">Firebase Android / Google Play Data Disclosure</a></li>
+  <li><a href="https://support.google.com/firebase/answer/6318039">Google Analytics for Firebase Data Collection</a></li>
+</ul>
+<p>The app is distributed through Google Play. Google may process information about your device and your use of Google Play under Google’s own privacy policy. Google may provide us with usage, performance, and diagnostic information through Google Play according to your device and Google Play settings.</p>
+<p>Those Google Play reporting settings are separate from the Firebase data processing described in this policy.</p>
 
 <h2>7. Backups</h2>
-<p>Depending on your device settings, Android may include the app’s saved game data in your device backup (for example, a backup stored in your Google Account) or copy it when you transfer data to a new device. These backups are provided and controlled by Android and Google, not by us, and we cannot access them. You can manage backups in your device settings.</p>
+<p>Depending on your device settings, Android may include the app’s saved game data in your device backup (for example, a backup stored in your Google Account) or copy it when you transfer data to a new device. These backups are provided and controlled by Android and Google, not by us. You can manage backups in your device settings. This system backup process is separate from Firebase Analytics and Crashlytics.</p>
 
 <h2>8. Data security</h2>
-<p>Game data is kept in the app’s private storage area, which Android protects from access by other apps. Because the app does not transmit this data, it is not exposed to transmission over a network. No method of storage is completely secure, so we cannot guarantee absolute security.</p>
+<p>The core puzzle game and local saves operate mainly on your device. Game saves are kept in the app’s private storage area, which Android protects from access by other apps. Firebase Analytics and Crashlytics use a network connection to send usage and diagnostic data to Google Firebase services.</p>
+<p>According to Firebase’s Android data disclosure documentation, the end-user data it lists is encrypted in transit using HTTPS. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
 
 <h2>9. Data retention and deletion</h2>
-<p>Game data stays on your device until you delete it. You can delete all of it at any time by either:</p>
+<p><strong>Local game data:</strong> You can delete the app’s local game data on your device by either:</p>
 <ul>
   <li>uninstalling Jigsaw Odyssey, or</li>
   <li>opening Android <em>Settings → Apps → Jigsaw Odyssey → Storage</em> and choosing <em>Clear storage</em> (the exact wording depends on your device).</li>
 </ul>
-<p>Deleting game data cannot be undone. If Android backup is turned on, a copy may remain in your device backup and may be restored when you reinstall the app. To request deletion of support emails, contact us at the address below.</p>
+<p>Deleting local game data cannot be undone through the app. If Android backup is turned on, a copy may remain in your device backup and may be restored when you reinstall the app. Backup retention and deletion depend on your Android and Google backup settings.</p>
+<p><strong>Firebase data:</strong> Retention and deletion of Analytics and Crashlytics data are governed by the applicable Firebase and Google service settings and policies linked in section 6. Deleting local app data does not by itself delete analysis or diagnostic data already sent to Firebase. You can contact us with questions or requests about this data.</p>
+<p><strong>Support emails:</strong> We keep support correspondence only for as long as needed to handle your request or resolve the issue. To request deletion of related support communications, contact <a href="mailto:yamcai64@gmail.com">yamcai64@gmail.com</a>.</p>
 
 <h2>10. Children</h2>
-<p>Jigsaw Odyssey is intended for users aged 6 and older. The app does not collect personal information from any user, including children. It has no accounts, chat or other social features, advertising or in-app purchases. The only links that leave the app are in Settings: this Privacy Policy, which opens in a web browser, and our support email address, which opens in an email app.</p>
+<p>Jigsaw Odyssey is intended for users aged 6 and older. Children do not need to create an account or provide their name, email address, phone number or other personal profile details to play. The app has no social, chat or user-content publishing features. This version has no advertising or in-app purchases.</p>
+<p>Firebase Analytics and Crashlytics automatically process the usage and diagnostic data described in section 4, including when children use the app. We use these services only for app analysis, stability and error diagnosis. We do not knowingly ask children to provide names, contact details or other directly identifying information to Firebase.</p>
+<p>The links available in the app are in Settings: this Privacy Policy, which opens in a web browser, and our support email address, which opens in an email app.</p>
 <p>If you are a parent or guardian and believe your child has sent us personal information by email, please contact us and we will delete it.</p>
 
 <h2>11. Changes to this policy</h2>
-<p>We may update this Privacy Policy from time to time, for example if the app’s features change. We will post the updated policy at this address and change the effective date above. If a change significantly affects how information is handled, we will also announce it in the app or on its Google Play page before the change takes effect.</p>
+<p>We may update this Privacy Policy from time to time, for example if the app’s features change. We will post updates at the <a href="https://cymayy.github.io/jigsaw-odyssey/privacy-policy.html">Jigsaw Odyssey Privacy Policy page</a> and change the effective date above. If a change significantly affects how information is handled, we will also announce it in the app or on its Google Play page before the change takes effect.</p>
 
 <h2>12. Contact us</h2>
 <p>If you have questions about this Privacy Policy or your information, contact Editing Tools Lab at <a href="mailto:yamcai64@gmail.com">yamcai64@gmail.com</a>.</p>
